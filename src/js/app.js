@@ -18,7 +18,7 @@ for (let index = 0; index < 16; index++) {
   cellEl.classList.add('A');
   boardEl.appendChild(cellEl);
 }
-function createImg(number) {
+export function createImg(number) {
   let imgEl = document.createElement('img');
   imgEl.classList.add('goblin');
   let cellCollection = document.querySelectorAll('.A');
@@ -32,7 +32,7 @@ function removeImg() {
   }
 }
 
-function changePlace() {
+export default function changePlace() {
   removeImg();
   let number = Math.floor(Math.random()*16);
   createImg(number);
