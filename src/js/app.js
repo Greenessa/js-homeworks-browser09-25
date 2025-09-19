@@ -8,7 +8,6 @@
 //   return `Demo: ${value}`;
 // }
 
-console.log("app.js included");
 let boardEl = document.createElement('div');
 boardEl.classList.add('board');
 let contEl = document.querySelector('.board-container');
@@ -25,7 +24,7 @@ export function createImg(number) {
   cellCollection[number].appendChild(imgEl);
 }
 
-function removeImg() {
+export function removeImg() {
   let goblinEl = document.querySelector('.goblin');
   if (goblinEl) {
     goblinEl.remove();
