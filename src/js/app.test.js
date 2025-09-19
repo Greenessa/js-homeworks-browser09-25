@@ -1,11 +1,13 @@
 import changePlace from "./app";
-// import { createImg } from "./app";
-// import { removeImg } from "./app";
+import { createImg } from "./app";
+import { removeImg } from "./app";
 
 test('changePlace', () => {
-  createImg = jest.fn();
-  removeImg = jest.fn();
+  const mockCreateImg = createImg;
+  mockCreateImg = jest.fn();
+  const mockRemoveImg = removeImg;
+  mockRemoveImg = jest.fn();
   changePlace();
-  expect(createImg).toHaveBeenCalled();
-  expect(removeImg).toHaveBeenCalled();
+  expect(mockCreateImg).toHaveBeenCalled();
+  expect(mockRemoveImg).toHaveBeenCalled();
 });
