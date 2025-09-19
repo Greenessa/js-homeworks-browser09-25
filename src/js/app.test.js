@@ -3,9 +3,9 @@ import { createImg } from "./app";
 import { removeImg } from "./app";
 
 test('changePlace', () => {
-  const mockCreateImg = createImg;
+  let mockCreateImg = createImg;
   mockCreateImg = jest.fn();
-  const mockRemoveImg = removeImg;
+  let mockRemoveImg = removeImg;
   mockRemoveImg = jest.fn();
   changePlace();
   expect(mockCreateImg).toHaveBeenCalled();
