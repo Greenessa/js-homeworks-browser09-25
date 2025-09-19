@@ -1,6 +1,6 @@
 import changePlace from "./app";
-import { createImg } from "./app";
-import { removeImg } from "./app";
+// import { createImg } from "./app";
+// import { removeImg } from "./app";
 
 test('changePlace', () => {
   createImg = jest.fn();
