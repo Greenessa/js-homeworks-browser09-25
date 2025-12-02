@@ -34,7 +34,7 @@ export function removeImg() {
   }
 }
 
-export default function changePlace() {
+export function changePlace() {
   removeImg();
   let number = Math.floor(Math.random()*16);
   createImg(number);
