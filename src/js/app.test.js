@@ -14,8 +14,6 @@ describe("Пример теста", () => {
   });
 });
 
-
-
 // import { changePlace } from "./app";
 // import { createImg } from "./app";
 // import { removeImg } from "./app";
